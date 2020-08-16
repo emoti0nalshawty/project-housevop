@@ -1,0 +1,265 @@
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/magnific-popup/dist/magnific-popup';
+
+@import 'vars';
+@import 'global';
+@import 'fonts';
+@import 'libs';
+@import 'media';
+
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 30px;
+    z-index: 10;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+    }
+}
+
+.menu {
+    &__list-item{
+        display: inline-block;
+        & + .menu__list-item{
+            padding-left: 40px;
+        }
+    }
+}
+
+.top {
+    min-height: 840px;
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url('../images/top-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 95px 0 75px;
+    display: flex;
+    align-items: flex-end;
+    &__box{
+        width: 582px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        margin-bottom: 100px;
+    }
+    &__scroll-anim{
+        animation: arrow 1.5s linear infinite;
+    }
+    &__text-box{
+        width: 582px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 200px;
+    }
+    &__text{
+        display: flex;
+        p {
+            margin-left: 15px;
+        }
+    }
+}
+
+@-webkit-keyframes arrow {
+    100% {
+      -webkit-transform: translateY(30px);    
+    }
+  }
+@keyframes arrow {
+    100% {
+      transform: translateY(30px);    
+    }
+  }
+
+.benefits{
+    position: relative;
+    display: flex;
+    padding: 90px 0 90px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 795px;
+    }
+    &__number{
+        top: -75px;
+        right: 13.4%;
+    }
+    &__inner-box{
+        width: 197px;
+        margin: 30px 0 30px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+        @extend %roboto;
+        p {
+            margin: 0;
+            margin-top: 53px;
+        }
+    }
+}
+
+.apartments{
+    position: relative;
+    display: flex;
+    &__inner{
+        max-width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__box{
+        position: relative;
+        font-size: 24px;
+        line-height: 28px;
+        @extend %raleway-medium;
+        &::after{
+            content: 'Лофт — 3 этажа';
+            position: absolute;
+            left: 50px;
+            top: 248px;
+        }
+        &:nth-child(1){
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+        &:nth-child(2)::after{
+            content: 'Лофт — 2 этажа';
+            position: absolute;
+            left: 50px;
+            top: 248px;
+        }
+        &:nth-child(3){
+            margin-right: 30px;
+        }
+        &:nth-child(4)::after{
+            content: 'Лофт — 2 этажа';
+            position: absolute;
+            left: 50px;
+            top: 248px;
+        }
+    }
+    &__number{
+        top: -65px;
+        left: 180px;
+    }
+}
+
+.request{
+    background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url('../images/request-bg.jpg'), #C4C4C4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 0 180px;
+    @extend %raleway-medium;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        max-width: 535px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    &__buttons{
+        max-width: 540px;
+        display: flex;
+        flex-wrap: wrap;
+        & .descrp {
+            width: 255px;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            color: #E7E7E7;
+            margin-right: 30px;
+        }
+        & .input {
+            margin-right: 30px;
+        }
+    }
+}
+
+.presentation{
+    display: flex;
+    padding-bottom: 180px;
+    &__video-box{
+        background: linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8)), url('../images/video-player.jpg'), #626262;
+        width: 720px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__play-button {
+        cursor: pointer;
+    }
+    &__number {
+        right: 200px;
+    }
+}
+
+.location {
+    padding-bottom: 180px;
+    &__number{
+        top: 3560px;
+        left: 266px;
+    }
+}
+
+.questions{
+    padding-bottom: 180px;
+    &__buttons{
+        padding-top: 50px;
+        display: flex;
+    }
+    &__input{
+        margin-right: 30px;
+    }
+    & .descrp{
+        width: 255px;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #E7E7E7;
+        @extend %raleway-medium;
+        margin-right: 35px;
+    }
+}
+
+.footer{
+    background-color: #2D343C;
+    padding: 60px 0 35px;
+    @extend %raleway-medium;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social-list{
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__col li{
+        margin-bottom: 15px;
+    }
+    &__email{
+        @extend %raleway-bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: #D4C17F;
+    }
+}

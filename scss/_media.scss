@@ -1,0 +1,285 @@
+@media (max-width: 1130px){
+    .apartments{
+        &__inner{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__box:nth-child(1){
+            margin-right: 0px !important;
+            margin-bottom: 30px !important;
+        }
+        &__box:nth-child(2){
+            margin-bottom: 30px !important;
+        }
+        &__box:nth-child(3){
+            margin-right: 0px !important;
+            margin-bottom: 30px !important;
+        }
+        &__number{
+            left: 65px !important;
+        }
+    }
+    .request{
+        &__inner{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text{
+            margin: 35px 0 35px;
+        }
+        &__buttons button{
+            margin-top: 10px;
+        }
+    }
+    .presentation{
+        &__number{
+            right: 25px !important;
+        }
+    }
+    .location{
+        &__number{
+            top: 4410px !important;
+            left: 45px !important;
+        }
+    }
+    .questions{
+        display: block !important;
+        &__buttons{
+            
+        }
+    }
+}
+
+@media (max-width: 915px){
+    .questions{
+        &__buttons{
+            flex-direction: column;
+            align-items: center;
+        }
+        & p.descrp{
+            margin-right: 0px !important;
+        }
+        &__input{
+            margin-right: 0px !important;
+            margin-bottom: 10px;
+        }
+
+    }
+}
+
+@media (max-width: 817px){
+    body.lock{
+        overflow: hidden;
+    }
+    .menu{
+        &__list{
+            display: none;
+            &-item{
+                padding: 0 !important;
+            }
+        }
+        &__list.active{
+            position: absolute;
+            right: 0px;
+            background-color: rgba(#000000, 0.5);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            top: -30px;
+        }
+        &__burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 4;
+        }
+        &__burger span{
+            position: absolute;
+            background-color: #fff;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+        }
+        &__burger:before,
+        &__burger:after{
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease 0s;
+        }
+        &__burger:before{
+            top: 0;
+        }
+        &__burger:after{
+            bottom: 0;
+        }
+        &__burger.active span{
+            transform: scale(0);
+        }
+        &__burger.active:before{
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        &__burger.active:after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+    }   
+}
+
+@media (max-width: 750px){
+    .presentation{
+        &__video-box{
+            width: 520px !important;
+            height: 560px !important;
+        }
+    }
+    .footer{
+        &__inner{
+            flex-wrap: wrap;
+            justify-content: space-around !important;
+        }
+        &__col:nth-child(4){
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 620px){
+    .benefits{
+        &__inner{
+            justify-content: center !important; 
+        }
+    }
+    .top{
+        &__title.title{
+            font-size: 37px;
+        }
+        &__box{
+            flex-direction: column;
+            align-items: center;
+            width: inherit !important;
+        }
+        &__text-box{
+            flex-direction: column;
+            align-items: center;
+            width: inherit !important;
+        }
+    }
+}
+
+@media (max-width: 565px){
+    .apartments{
+        &__box{
+            font-size: 20px !important;
+        }
+        &__box img{
+            width: 400px;
+        }
+        &__box:nth-child(1)::after{
+            top: 75% !important;
+        }
+        &__box:nth-child(2)::after{
+            top: 75% !important;
+        }
+        &__box:nth-child(3)::after{
+            top: 75% !important;
+        }
+        &__box:nth-child(4)::after{
+            top: 75% !important;
+        }
+    }
+    .presentation{
+        &__video-box{
+            width: 420px !important;
+            height: 460px !important;
+        }
+    }
+    .request{
+        &__buttons{
+            flex-direction: column;
+            & p.descrp{
+                order: -1;
+                margin-right: 0px;
+            }
+            & input.input{
+                margin-right: 0px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .apartments{
+        &__number{
+            font-size: 205px !important;
+            top: -125px !important;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .footer{
+        &__col:nth-child(1){
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .presentation{
+        &__video-box{
+            width: 320px !important;
+            height: 360px !important;
+        
+        }
+    }
+}
+
+@media (max-width: 430px){
+    .apartments{
+        &__box img{
+            width: 300px;
+        }
+    }
+    .top{
+        &__title.title{
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .presentation{
+        &__video-box{
+            width: 220px !important;
+            height: 260px !important;
+        
+        }
+        &__play-button{
+            width: 50px !important;
+            height: 50px !important;
+        }
+    }
+}
+
+@media (max-width: 330px){
+    .apartments{
+        &__box img{
+            width: 250px;
+        }
+    }
+}

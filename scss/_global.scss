@@ -1,0 +1,101 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-size: inherit;
+}
+
+body{
+    position: relative;
+    min-width: 320px;
+    @extend %raleway-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #242B33;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    @extend %playfair;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #D4C17F;
+}
+
+.title-1 {
+    @extend %playfair;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    margin-bottom: 100px;
+}
+
+.title-2 {
+    @extend %playfair;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 255px;
+    height: 50px;
+    background: #FFFFFF;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: #000;
+    outline: none;
+    border: none;
+    padding: 0 25px;
+}
+
+button {
+    width: 255px;
+    height: 50px;
+    background: #D4C17F;
+    @extend %raleway-bold;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.number {
+    position: absolute;
+    @extend %playfair;
+    font-size: 400px;
+    line-height: 533px;
+    color: #FFFFFF;
+    opacity: 0.02;
+    z-index: -1;
+}
