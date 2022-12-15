@@ -66,14 +66,24 @@ body{
 input {
     width: 255px;
     height: 50px;
-    background: #FFFFFF;
+    background: rgb(118 135 155 / 30%);
     font-size: 14px;
     line-height: 27px;
     text-align: center;
-    color: #000;
+    color: #FFFFFF;
     outline: none;
     border: none;
     padding: 0 25px;
+    transition: all 0.1s linear;
+    &:focus{
+        background: rgb(0 0 0 / 30%);
+        &::placeholder{
+            color: #999999;
+        }
+    }
+    &::placeholder{
+        color: #FFFFFF;
+    }
 }
 
 button {
@@ -88,6 +98,10 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
+    transition: all 0.1s linear;
+    &:hover{
+        background-color: #a79762;
+    }
 }
 
 .number {
